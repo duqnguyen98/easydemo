@@ -11,7 +11,7 @@ const Home = () => {
   )
 }
 
-const nativeAndroid = () =>{
+const NativeAndroid = () =>{
   return(
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <Button title='Native here'></Button>
@@ -24,7 +24,7 @@ const App = () =>{
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name='Home' component={Home}></Stack.Screen>
-        <Stack.Screen name='QR' component={nativeAndroid}></Stack.Screen>
+        <Stack.Screen name='QR' component={NativeAndroid}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   )
